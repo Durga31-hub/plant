@@ -6,7 +6,7 @@
       background-image: url('home_image.png');
       background-position: center;
       background-size: cover;
-      height:650px;
+      height:100%;
       margin-top: 0px;
     }
   .header-container{
@@ -24,18 +24,21 @@
     gap: 20px;
     margin-top:0px;
     font-size: 22px;
+
+
    }
    ul li a{
         text-decoration:none;
         color:whitesmoke;
         font-family:cursive;
    }
+
     .content {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   align-items: center;          
   gap: 40px;
-  margin: 80px auto;           
+  margin: 25px auto;           
   width: 90%;
   max-width: 1100px;
 }
@@ -52,6 +55,92 @@
   text-align: justify;
   font-size: 18px;
   line-height:1.8;
+}
+.card1{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      
+    }
+      .card {
+      background: #f8f9f8;
+      padding: 50px;
+      border-radius: 12px;
+      height: 250px;
+      width: 320px;
+  
+    }
+    .card h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .card:hover{
+      background-color: darkgreen;
+      color:white;
+    }
+#products {
+  padding: 70px 0;
+  text-align: center;
+}
+
+#products h2 {
+  color: #1a3c2d;
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+}
+
+.product {
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product img {
+  width: 350px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 18px;
+  text-align: left;
+  font-size: 18px;
+  color: #1a3c2d;
+  margin-bottom: 8px;
+}
+
+
+.info button {
+  color:darkgreen;
+  padding: 10px 10px;
+  border-color: darkgreen;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
+  border-radius: 30px;
+}
+.info button:hover{
+  color: white;
+  background-color: darkgreen;
 }
   </style>
 </head>
@@ -75,7 +164,104 @@
   </p>
 </div>
   </div>
+  <div class="card1">
+     <div class="card">
+      <img src="Type_1.png">
+          <h4>Indoor Plants</h4>
+          <p>Bring the beauty of nature inside your home with our wide selection of indoor plants perfect for any room.</p>
+        </div>
+        <div class="card" style="background-color: darkgreen;">
+          <img src="Type_2.png" alt="no img">
+          <h4 style="color: white;">Outdoor Plants</h4>
+          <p style="color: white;">Bring a touch of greenery to your living spaces with our collections of indoor plants,perfect for purifying the air and a natural touch inside your space.</p>
+        </div>
+        <div class="card">
+          <img src="Type_3.png">
+           <h4>Plants Pots</h4>
+          <p>Add a touch of style to your indoor/outdoor spaces with our curated pot collection in many colours and designs.</p>
+        </div>
+      </div>
+  </section>
+  <section id="products">
+    <h2 style="text-align:center;color: darkgreen;padding-top: 40px;">What We Offer To You</h2>
+       <div class="product-grid">
+      <div class="product">
+        <img src="Product_Plant_1.png">
+        <div class="info">
+          <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p> <p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="Product_Plant_2.png">
+        <div class="info">
+         <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p>
+          <p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="Product_Plant_3.png">
+        <div class="info">
+          <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p> <p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="Product_Plant_3.png">
+        <div class="info">
+          <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p> <p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+     
+      <div class="product">
+        <img src="Product_Plant_5.png">
+        <div class="info">
+          <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p>
+          <p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="Product_Plant_6.png">
+        <div class="info">
+         <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p><p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="Product_Plant_7.png">
+        <div class="info">
+          <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p>
+          <p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="Product_Plant_8.png">
+        <div class="info">
+          <div style="display: flex; align-items: center; gap: 10px;">
+          <h4>Hanging Plants</h4>
+          <p style="text-decoration: line-through;"> $10</p><p>$8</p></div>
+          <button>Shop Now</button>
+        </div>
+    </div>
+    </div>
   </section>
 </body>
 </html>
-
